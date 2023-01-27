@@ -331,7 +331,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">TBD</h2>
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Accessibility Testing</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -339,7 +339,75 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Coming soon to a theater near you!</p>
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        </head>
+                                        <body>
+                                            <h1><strong>Testing on Akiruno City Library Website</strong> </h1>
+                                                <p>Rose McClintock <br>LIS 4206 <br>Winter 2023</p>
+                                                <p><a href="https://www.library.akiruno.tokyo.jp/ ">Akiruno City Library</a></p>
+                                            <hr>
+                                                <h3>Overview</h3>
+                                                    <p>The purpose of this report is to evaluate digital accessibility for the Akiruno City Library. 
+                                                        This is to minimize the potential for access issues arising from the use of assistive technologies. 
+                                                    </p>
+                                                <h3>Components</h3>
+                                                    <dl>
+                                                        <dt>Title &#128077;</dt>
+                                                            <dd>&#9733;Component: text values within the < title > tag. </dd>
+                                                            <dd>&#9733;Results: Pages within the site each have clear, concise titles.
+                                                                However, there are a large number of pages within the site, 
+                                                                and titles of subpages do not note that they are still on the Akiruno City Library page. 
+                                                                For users without visual impairments, this is made clear by a header logo image.</dd>
+                                                        <dt>Image Text Alternatives &#128078;</dt>
+                                                                <dd>&#9733;Component: text which conveys the content of images via text.</dd>
+                                                                <dd>&#9733;Results:
+                                                                    <ul>&#9733;The logos used have descriptive alt text, as to buttons to linked services which feature images. 
+                                                                        The slideshow featured on the main page of the site does not have alt text. WAVE identified 4 items with 
+                                                                        empty alternative text, alongside 5 images with appropriate alt text. </ul>
+                                                                    <ul>&#9733;The site as a whole does not heavily rely on images, and primarily contains text. 
+                                                                        There are few alt text errors in the bulk of the website because there are very few images 
+                                                                        present outside of the main page.</ul>
+                                                                </dd>
+                                                        <dt>Text &#128077;</dt>
+                                                            <dd>&#9733;Component:The content of the pages. </dd>
+                                                            <dd>&#9733;Results:
+                                                                     <ul>&#9733;Heading:Heading: the main page only has one < h1 >, but other pages
+                                                                             on the site have multiple headings on the same level, which may be confusing to screen readers.</ul>
+                                                                    <ul>&#9733;Contrast: WAVE reported only 2 contrast errors on the main page, both in the controls for the slideshow. 
+                                                                            They are white on a blue background and very small, which may be difficult to read. 
+                                                                            There are very few errors outside the main page, however. </ul>
+                                                                    <ul>&#9733;Resizing Text: the page itself offers a function to resize text between 
+                                                                            small, medium, and large. Page adjusts well to zoom functions through the browser.</ul>
+                                                            </dd>
+                                                        <dt>Interaction &#128077;</dt>
+                                                                <dd>&#9733;Component: use of the keyboard only to navigate the web page.</dd>
+                                                                <dd>&#9733;Results: keyboard only navigation is possible.
+                                                                     Navigation using arrows and the tab key followed a sequential order from the top of the page to the bottom.
+                                                                      Links could be opened through the enter key. Returning to a previous page after following these links was difficult,
+                                                                       though the presence of a “return to home” link on each page made it simpler to navigate. 
+                                                                    Forms were easily accessible and usable with only a keyboard.</dd>
+                                                        <dt>General &#128077;</dt>
+                                                                <dd>&#9733;Component: other content present on the page, as well as basic structure</dd>
+                                                                <dd>&#9733;Results:
+                                                                    <ul>&#9733;Moving, flashing, or blinking content:There is not flashing or blinking content.
+                                                                         There is a moving slideshow on the main page which can be paused.
+                                                                         However, the slideshow is missing alt text and the controls for the slideshow have poor contrast. </ul>
+                                                                    <ul>&#9733;Multimedia: The slideshow is the only media present, so there are no issues with closed captioning or transcripts. </ul>
+                                                                    <ul>&#9733;Basic Structure: Thanks to the lack of images and high organizations, the basic structure of the page is 
+                                                                        maintained even without styling and images. 
+                                                                        WAVE removed the styles and images and very little about the page changed. 
+                                                                        This suggests there will be good translation to a screen reader. </ul>
+                                                                </dd>
+                                                    </dl>
+                                                <h3>Summary &#128077;</h3>
+                                                    <p>Though there are some images with missing alt text, and some pages with a potentially confusing header structure,
+                                                         the majority of this website had few accessibility issues. The lack of images and heavy reliance on texts improves 
+                                                         the ability to access the site via screen reader or through only keyboard navigation. The presence of font sizing tools 
+                                                         further improves readability for those with visual impairments. Though the blue and white color scheme could be difficult
+                                                          for those with color blindness to see, contrast errors are offset by the use of bold text, and by minimal use of these 
+                                                          colors for text content. Overall, this webpage has good accessibility.</p>
+                                        </body>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
