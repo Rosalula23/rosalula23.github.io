@@ -479,6 +479,23 @@ var layout = {
 Plotly.newPlot("myPlot", data, layout);
 </script>
 </body>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+var xArray = ["Red", "Purple", "Green", "Blue", "Orange"];
+var yArray = [256, 241, 366, 950, 755];
+
+var layout = {title:"Color of Bricks Used"};
+
+var data = [{labels:xArray, values:yArray, type:"pie"}];
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+
+</body>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
