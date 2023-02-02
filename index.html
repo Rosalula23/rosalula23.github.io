@@ -452,7 +452,42 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    
+                                    <html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["Red", "Blue", "Yellow", "Green", "Orange"];
+var yValues = [55, 24, 39, 72, 40];
+var barColors = [
+  "#FF0000",
+  "#0000FF",
+  "#FFFF00",
+  "#008000",
+  "#FF8C00"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Brick Color Distribution"
+    }
+  }
+});
+</script>
+
+</body>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
