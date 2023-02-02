@@ -452,11 +452,10 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<h4>Brick Color Distribution</h4>
 <body>
-
-<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<canvas id="Pie" style="width:100%;max-width:600px"></canvas>
 
 <script>
 var xValues = ["Red", "Blue", "Yellow", "Green", "Orange"];
@@ -469,7 +468,7 @@ var barColors = [
   "#FF8C00"
 ];
 
-new Chart("myChart", {
+new Chart("Pie", {
   type: "pie",
   data: {
     labels: xValues,
@@ -480,11 +479,71 @@ new Chart("myChart", {
   },
   options: {
     title: {
-      display: true,
+      display: false,
       text: "Brick Color Distribution"
     }
   }
 });
+</script>
+</body>
+<hr>
+<h4>Colors Used in Building</h4>
+<body>
+<canvas id="Bar" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["Red", "Blue", "Yellow", "Greed", "Orange"];
+var yValues = [25, 10, 5, 13, 2];
+var barColors = ["red", "blue","yellow","green","orange"];
+
+new Chart("Bar", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: false,
+      text: "Colors Used in Building"
+    }
+  }
+});
+</script>
+<h4>Bricks Placed Over Time</h4>
+</body>
+<hr>
+<canvas id="Line" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = [0800, 0900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700];
+var yValues = [15, 12, 13, 8, 22, 25, 15, 15, 12, 18, 24];
+
+new Chart("Line", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValues
+    }]
+  },
+  options:{
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 0, max:30}}],
+    }
+    }
+});
+
+ 
 </script>
 
 </body>
